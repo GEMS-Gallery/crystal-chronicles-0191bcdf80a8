@@ -1,0 +1,23 @@
+type Result = 
+ variant {
+   err: text;
+   ok: CharacterDetails;
+ };
+type CharacterDetails = 
+ record {
+   id: nat;
+   image: text;
+   name: text;
+   strengths: vec text;
+   weaknesses: vec text;
+ };
+type Character = 
+ record {
+   id: nat;
+   image: text;
+   name: text;
+ };
+service : {
+  getCharacterDetails: (nat) -> (Result) query;
+  getCharacters: () -> (vec Character) query;
+}
