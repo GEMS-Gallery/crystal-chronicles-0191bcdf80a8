@@ -23,9 +23,9 @@ actor {
   };
 
   stable var characters: [Character] = [
-    { id = 1; name = "Cloud Strife"; image = "cloud.png" },
-    { id = 2; name = "Tifa Lockhart"; image = "tifa.png" },
-    { id = 3; name = "Aerith Gainsborough"; image = "aerith.png" }
+    { id = 1; name = "Y'shtola Rhul"; image = "yshtola.png" },
+    { id = 2; name = "Alphinaud Leveilleur"; image = "alphinaud.png" },
+    { id = 3; name = "Thancred Waters"; image = "thancred.png" }
   ];
 
   let characterDetails = HashMap.HashMap<Nat, CharacterDetails>(10, Nat.equal, Nat.hash);
@@ -44,23 +44,23 @@ actor {
   // Initialize character details
   characterDetails.put(1, {
     id = 1;
-    name = "Cloud Strife";
-    image = "cloud.png";
-    strengths = ["Powerful sword techniques", "Limit breaks"];
-    weaknesses = ["Emotional trauma", "Identity crisis"];
+    name = "Y'shtola Rhul";
+    image = "yshtola.png";
+    strengths = ["Powerful magic", "Tactical genius"];
+    weaknesses = ["Physical combat", "Overconfidence"];
   });
   characterDetails.put(2, {
     id = 2;
-    name = "Tifa Lockhart";
-    image = "tifa.png";
-    strengths = ["Martial arts expert", "Strong physical attacks"];
-    weaknesses = ["Limited ranged abilities", "Emotional attachment"];
+    name = "Alphinaud Leveilleur";
+    image = "alphinaud.png";
+    strengths = ["Diplomacy", "Summoning abilities"];
+    weaknesses = ["Physical strength", "Naivety"];
   });
   characterDetails.put(3, {
     id = 3;
-    name = "Aerith Gainsborough";
-    image = "aerith.png";
-    strengths = ["Powerful magic abilities", "Healing skills"];
-    weaknesses = ["Physically fragile", "Targeted by antagonists"];
+    name = "Thancred Waters";
+    image = "thancred.png";
+    strengths = ["Stealth", "Gunbreaker skills"];
+    weaknesses = ["Loss of magical abilities", "Emotional baggage"];
   });
 }

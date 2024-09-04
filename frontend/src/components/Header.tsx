@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <header className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-gold hover:text-white transition-colors">
-          Final Fantasy XXIV Blog
+          Final Fantasy 14 Blog
         </Link>
         <nav>
           <Link to="/" className="text-gold hover:text-white transition-colors">Characters</Link>

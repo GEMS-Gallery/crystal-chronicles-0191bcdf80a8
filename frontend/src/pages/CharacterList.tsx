@@ -34,7 +34,7 @@ const CharacterList: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="hero-banner h-64 flex items-center justify-center mb-8">
-        <h1 className="text-4xl font-bold text-white text-shadow-lg">Final Fantasy XXIV Characters</h1>
+        <h1 className="text-4xl font-bold text-white text-shadow-lg">Final Fantasy 14 Characters</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {characters.map((character) => (
